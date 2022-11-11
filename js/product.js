@@ -48,7 +48,7 @@ function showing_shoe_detail(id) {
             for (const iterator of ele.cartarr) {
               if (iterator.productid == id) {
                 document.querySelector(".buttoncomehere").innerHTML = `
-                <button id="addedtocart"    class="btn btn-dark bg-black cartbtn cartbtnadded">
+                <button id="addedtocart" onclick="shoeincart()"    class="btn btn-dark bg-black cartbtn cartbtnadded">
                 <h4 id="addtocarttxt"> Added to cart</h4>
             </button>`;
               } else if (iterator.productid == !id) {
@@ -135,4 +135,8 @@ function addtocart(id, pid) {
       userid: id,
     }),
   });
+}
+
+function shoeincart() {
+  location.href = "/html/cart.html";
 }

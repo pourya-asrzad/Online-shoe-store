@@ -1350,38 +1350,97 @@
       "indexprice": 2,
       "userid": 3,
       "id": 6
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 4,
+          "color": "yellowc",
+          "size": 41
+        }
+      ],
+      "indexprice": 2,
+      "userid": 3,
+      "id": 7
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 1,
+          "color": "bluec",
+          "size": 40
+        }
+      ],
+      "indexprice": 2,
+      "userid": 3,
+      "id": 8
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 5,
+          "color": "redc",
+          "size": 40
+        }
+      ],
+      "indexprice": 1,
+      "userid": 3,
+      "id": 9
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 28,
+          "color": "kerem",
+          "size": 41
+        }
+      ],
+      "indexprice": 1,
+      "userid": 3,
+      "id": 10
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 7,
+          "color": "kerem",
+          "size": 41
+        }
+      ],
+      "indexprice": 1,
+      "userid": 3,
+      "id": 11
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 13,
+          "color": "kerem",
+          "size": 41
+        }
+      ],
+      "indexprice": 2,
+      "userid": 3,
+      "id": 12
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 13,
+          "color": "kerem",
+          "size": 41
+        }
+      ],
+      "indexprice": 2,
+      "userid": 3,
+      "id": 13
     }
   ],
   "userssearch": [
     {
-      "historyword": "uytu",
-      "userid": 3,
-      "id": 1
-    },
-    {
-      "historyword": "uytu",
-      "userid": 3,
-      "id": 2
-    },
-    {
       "historyword": "nike",
       "userid": 3,
-      "id": 3
-    },
-    {
-      "historyword": "fg",
-      "userid": 3,
-      "id": 4
-    },
-    {
-      "historyword": "f",
-      "userid": 3,
-      "id": 5
-    },
-    {
-      "historyword": "noroz",
-      "userid": 3,
-      "id": 6
+      "id": 1
     }
   ]
 }

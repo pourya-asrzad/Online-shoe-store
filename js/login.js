@@ -98,3 +98,10 @@ function setremember() {
     passwordelement.value = e.pws;
   });
 }
+
+if (localStorage.remember) {
+  const parseremember = JSON.parse(localStorage.remember);
+  if (parseremember == true) {
+    document.querySelector(".signinbtn").style.backgroundColor = "#212529";
+  }
+}

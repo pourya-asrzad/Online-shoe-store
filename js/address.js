@@ -16,7 +16,7 @@ function getaddress(id) {
            </div>
             <p id="addes${value.id}">${value.description}</p>
         </div>
-          <input onclick="chooseaddress(${value.id})" type="radio" name="address" id="homeradiou${value.id}">
+          <input checked onclick="chooseaddress(${value.id})" type="radio" name="address" id="homeradiou${value.id}">
     </div>`;
         document.querySelector(".addresscomehere").innerHTML += addresdafault;
       }

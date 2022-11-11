@@ -1,6 +1,6 @@
 # Online-shoe-store
 
-It is a project with JavaScript, HTML, CSS, and a little bit of Bootstrap. The full explanation is given in the word file.
+It is a project with JavaScript, HTML, CSS, and a little bit of Bootstrap.
 
 how can you run this? if you know json server go in terminal of backend folder and
 write <code>npm run start </code>

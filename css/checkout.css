@@ -1,0 +1,319 @@
+@font-face {
+    font-family: "basefont";
+    src: url("/font-robot/Roboto-Bold.ttf");
+}
+
+body {
+    background-color: #aeb2b51b !important;
+}
+
+.top-checkout h2 {
+    font-size: 30px;
+    font-family: basefont;
+}
+
+.top-checkout {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.top-more {
+    margin-right: 12px;
+}
+
+h3,
+p,
+h2,
+h1 {
+    font-family: basefont;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.562);
+}
+
+.address-checkout {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 13px 0;
+    justify-content: space-around;
+    border-radius: 29px;
+    margin-top: 31px;
+    width: 24rem;
+    margin-left: 11px;
+    height: 4rem;
+}
+.address-checkout p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 13rem;
+    white-space: nowrap;
+    margin-top:10px;
+}
+.address-checkout h2 {
+    margin: 2px;
+}
+
+.hr {
+    height: 0.5px;
+    background-color: rgb(0 0 0 / 31%);
+    margin: 29px 20px;
+}
+
+.card-checkout {
+    background-color: white;
+    padding: 16px 0;
+    width: 23rem;
+    border-radius: 27px;
+    padding-left: 12px;
+    margin-left: 11px;
+}
+
+.card-checkout {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.img-container-checkout {
+    padding: 8px;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 23px;
+    background-color: #aeb2b518;
+
+}
+
+.img-container-checkout img {
+    margin-top: 15px;
+}
+
+.details-card-checkout h1 {
+    font-size: 23px;
+    margin: 5px;
+}
+
+.header-card-checkout {
+
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-card-checkout img {
+    margin-left: 20px;
+
+}
+
+.info-shoe-checckout {
+    display: flex;
+    align-items: center;
+}
+
+.color-shoe-checkout {
+    width: 25px;
+    height: 25px;
+    border-radius: 24px;
+    background-color: rgb(25, 20, 20);
+    margin: 0 11px;
+}
+
+.hei-hr {
+    margin: 0 7px;
+    height: 20px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.414);
+}
+
+.price-checkout {
+    margin: 0 5px;
+}
+
+.conuter-checkout {
+
+    margin-left: 38px;
+
+}
+
+.conuter-checkout div {
+    margin: 0 11px;
+}
+
+.conuter-checkout {
+    display: flex;
+    align-items: center;
+    background-color: rgba(182, 183, 185, 0.261);
+    width: 1rem;
+    padding: 6px 10px;
+    justify-content: center;
+    border-radius: 16px;
+
+}
+
+.price-index-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14rem;
+}
+
+.index-shoe {
+    margin: 0;
+}
+
+.choose-shipping-checkout {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 7px;
+    border-radius: 29px;
+    width: 24rem;
+    margin-left: 7px;
+}
+
+.choose-shipping-checkout h3 {
+    font-size: 21px;
+}
+
+.plusbtn-checkout {
+    background-color: black;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 35px;
+    margin-left: 12px;
+    margin-bottom: 14px;
+}
+
+.promoinput {
+    width: 18rem;
+    font-size: 20px;
+    border: 0;
+    background-color: #00000008;
+    margin-left: 17px;
+    border-radius: 13px;
+    padding-left: 17px;
+    height: 4rem;
+}
+
+.last-arrived-checkout h4{
+    font-size: 23px;
+    font-family: 'basefont';
+    color: #000000a8;
+}
+.last-arrived-checkout div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+}
+.last-arrived-checkout p{
+    margin: 0;
+    font-size:19px ;
+}
+.lasthr{
+    height: 1px !important;
+    margin: 18px;
+}
+.last-arrived-checkout{
+    background: white;
+    padding: 12px;
+    margin: 16px 13px;
+    border-radius: 22px;
+}
+.topayment-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+color: white;
+background-color: black;
+border-radius: 35px;
+width: 90%;
+box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+.topayment-btn{
+    margin-left: 7px;
+}
+.topayment-btn h3{
+font-size: 19px;
+}
+.raducing-countainer-button{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+    padding-top: 22px;
+    padding-left: 18px;
+    border-top-left-radius: 31px;
+    border-top: 1px solid #0000004f;
+    border-top-right-radius: 31px;
+}
+.ghost{
+    height: 120px;
+}
+.shippingdes{
+    max-width: 12rem;
+    max-height: 1rem;
+    margin-top: 5px;
+}
+.shippingmode{
+    margin-right: 20px;
+}
+.hidden{
+    display: none !important;
+}
+
+.pinkc {
+    background-color: palevioletred;
+}
+
+.yellowc {
+    background-color: yellow;
+}
+
+.bluec {
+    background-color: aqua;
+}
+
+.brownc {
+    background-color: burlywood;
+}
+
+.kerem {
+    background-color: rgb(165, 81, 42);
+}
+
+.checked {
+    background-color: aliceblue;
+}
+
+.redc {
+    background-color: red;
+}
+
+.blackc {
+    background-color: black;
+}
+.shippig-mode p{
+    white-space: nowrap;
+    width: 14rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.validationshipping{
+    position: fixed;
+    bottom: 122px;
+    color: red;
+    left: 9rem;
+    font-size: 17px;
+}

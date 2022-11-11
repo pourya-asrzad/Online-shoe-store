@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imges/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="/css/chooseshipping.css">
+
+    <title>shoea-checkout</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-checkout">
+            <a href="/html/cart.html">
+                <img src="/imges/prev icon.png" alt="back">
+            </a>
+            <h2>Checkout</h2>
+        </div>
+        <div class="top-more">
+            <img width="35" src="/imges/top-more.png" alt="">
+        </div>
+    </header>
+    <main>
+        <section>
+
+            <h2 style="     margin-top: 4px;
+            margin-left: 27px;">Shipping Address</h2>
+            <div class="address-checkout">
+                <img width="70" src="/imges/location.png" alt="">
+                <div>
+                    <h2 class="addresstitle">Home</h2>
+                    <p class="addessdetail">6180 Sunbrook Park,PC 5679</p>
+                </div>
+                <a href="/html/shippingaddres.html">
+                    <img width="30" src="/imges/edit.png" alt="">
+                </a>
+            </div>
+        </section>
+        <div class="hr"></div>
+        <section>
+            <h2 style=" margin-left: 20px; ">Order List</h2>
+
+
+            <div class="checkout-list-will-come-here">
+
+            </div>
+           
+
+        </section>
+        <div class="hr"></div>
+        <section>
+            <h2 style=" margin-left: 20px; ">Choose Shipping</h2>
+
+            <div class="choose-shipping-checkout">
+                <img src="/imges/truck.png" alt="">
+                <h3>Choose Shipping Type</h3>
+                <a href="/html/chooseshipping.html">
+                    <img src="/imges/nexticon.png" alt="">
+                </a>
+            </div>
+            <div class="shippingmodecomehere">
+
+            </div>
+    
+            <div class="hr"></div>
+
+        </section>
+        <section>
+            <h2 style=" margin-left: 20px; ">Promo Code</h2>
+            <div>
+                <input class="promoinput" type="text" placeholder="Enter Promo Code">
+                <button class="plusbtn-checkout">
+                    <img src="/imges/pluswhite.png" alt="">
+                </button>
+            </div>
+
+
+        </section>
+        <section>
+            <div class="last-arrived-checkout">
+                <div>
+                    <p>Amount</p>
+                    <h4 class="amount">$585.00</h4>
+                </div>
+                <div>
+                    <p>Shipping</p>
+                    <h4 class="shippingprice">-</h4>
+                </div>
+                <div class="hr lasthr"></div>
+                <div>
+                    <p>Total</p>
+                    <h4 class="totalprice">-</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="ghost"></div>
+    <footer>
+        <span class="validationshipping hidden">choose shipping</span>
+        <div class="raducing-countainer-button">
+         
+                <button onclick="gotochoosepayment()" class="topayment-btn">
+                    <h3>Countinue to Payment</h3>
+                    <img src="/imges/gocheckout.png" alt="Arrowicon">
+                </button>
+        
+        </div>
+    </footer>
+<script src="/js/checkout.js"></script>
+
+</body>
+
+</html>

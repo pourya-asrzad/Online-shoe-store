@@ -1,0 +1,146 @@
+.card-order {
+    display: flex;
+    
+}
+.card-order {
+    background-color: white;
+    padding: 16px 0;
+    width: 25rem;
+    border-radius: 27px;
+    margin-left: 10px;
+    padding-left: 12px;
+    margin-top: 17px;
+ 
+}
+.img-container-order {
+    padding: 8px;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 23px;
+    background-color: #aeb2b518;
+
+}
+
+.img-container-order img {
+    margin-top: 15px;
+}
+.details-card-order h1 {
+    font-size: 23px;
+}
+.header-card-order {
+
+    margin-left: 10px;
+}
+.header-card-order h1{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header-card-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+}
+
+.header-card-order img {
+    margin-left: 20px;
+
+}
+.info-shoe-order {
+    display: flex;
+}
+.modalpcolor{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 20px;
+    margin: 0 9px;
+    background-color: black;
+    margin-top: 4px;
+
+}
+.hei-hr {
+    margin: 0 7px;
+    height: 20px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.414);
+}
+.price-index-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price-index-order h1 {
+    margin: 0 20px;
+    margin-left: 10px;
+}
+
+.price-order {
+    margin: 0 5px;
+}
+.madalpindex{
+    background-color: #aeb2b52e;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'basefont';
+    border-radius: 12px;
+}
+.order-trackbtn{
+    background-color: black;
+    color: white;
+    border-radius: 21px;
+    height: 2.5rem;
+    width: 8rem;
+}
+.order-trackbtn span{
+    font-family: 'basefont';
+    font-size: 17px;
+}
+.indelivery{
+    background: #cccccc4d;
+    width: 6rem;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+
+.pinkc {
+    background-color: palevioletred;
+}
+
+.yellowc {
+    background-color: yellow;
+}
+
+.bluec {
+    background-color: aqua;
+}
+
+.brownc {
+    background-color: burlywood;
+}
+
+.kerem {
+    background-color: rgb(165, 81, 42);
+}
+
+.checked {
+    background-color: aliceblue;
+}
+
+.redc {
+    background-color: red;
+}
+
+.blackc {
+    background-color: black;
+}

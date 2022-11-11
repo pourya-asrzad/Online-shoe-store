@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/imges/logo.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="name_and_profile">
+                <div class="profile_contain">
+                    <img class="profile_image" width="60" height="60" src="" alt="">
+                </div>
+                <div>
+                    <h6 class="saygood">Good Morning 👋</h6>
+                    <h5 class="nameandlast"></h5>
+                </div>
+            </div>
+            <div>
+                <img src="/imges/header.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <input onfocus="change_page_tosearch()" class="searchinput_home" type="search" placeholder="Search" name="" id="">
+            <div class="categories">
+                <div class="arm-box">
+                    <div class="arms" id="Nike">
+                        <img id="Nike" class="ar1" src="/imges/categories.png" alt="">
+                    </div>
+                    <p>Nike</p>
+                </div>
+                <div class="arm-box">
+                    <div class="arms" id="adidas">
+                        <img id="adidas" class="ar2" src="/imges/adidas.png" alt="">
+                    </div>
+                    <p>Adidas</p>
+                </div>
+                <div class="arm-box">
+                    <div class="arms" id="puma">
+                        <img id="puma" class="ar3" src="/imges/puma.png" alt="">
+                    </div>
+                    <p>Puma</p>
+                </div>
+                <div class="arm-box">
+                    <div class="arms" id="asics">
+                        <img id="asics" class="ar4" src="/imges/asics.png" alt="">
+                    </div>
+                    <p>Asics</p>
+                </div>
+                <div class="arm-box">
+                    <div class="arms" id="reebok">
+                        <img id="reebok" class="ar5" src="/imges/reebok.png" alt="">
+                    </div>
+                    <p>Reebok</p>
+                </div>
+                <div class="arm-box">
+                    <div class="arms" id="newbalance">
+                        <img id="newbalance" class="ar6" src="/imges/newba.png" alt="">
+                    </div>
+                    <p>New Ba..</p>
+                </div>
+                <div class="arm-box">
+                    <div class="arms" id="converse">
+                        <img id="converse" class="ar7" src="/imges/convers.png" alt="">
+                    </div>
+                    <p>Converse</p>
+                </div>
+                <div onclick="showmore()" class="arm-box morebtn">
+                    <div class="arms">
+                        <img class="ar8" src="/imges/more.png" alt="">
+                    </div>
+                    <p>More..</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="Mostpopular">
+                <h2>Most Popular</h2>
+                <a href="/html/seeall.html">
+                    <h4>See All</h4>
+                </a>
+            </div>
+            <div class="product_arm_button_container">
+                <button id="allbtn" onclick="setsome('mostpopular')" type="button"
+                    class="btn btn-dark product_arm_button ">All</button>
+                <button onclick="setsome('Nike')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Nike</button>
+                <button onclick="setsome('adidas')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Adidas</button>
+                <button onclick="setsome('puma')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Puma</button>
+                <button onclick="setsome('asics')" type="button" class="btn btn-outline-dark product_arm_button">
+                    Asics</button>
+                <button onclick="setsome('reebok')" type="button" class="btn btn-outline-dark product_arm_button">
+                    Reebok</button>
+                <button onclick="setsome('newbalance')" type="button" class="btn btn-outline-dark product_arm_button">
+                    New Ba..</button>
+                <button onclick="setsome('converse')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Converse</button>
+                <button onclick="setsome('irankafsh')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Irankafsh</button>
+                <button onclick="setsome('kafshmeli')" type="button"
+                    class="btn btn-outline-dark product_arm_button">kafshmeli</button>
+            </div>
+        </section>
+        <section>
+
+
+            <div class="products">
+
+            </div>
+        </section>
+        <!-- when order is successful -->
+<section>
+    <div onclick="hidesuccessful()" class="succsessghost hidden"></div>
+    <div class="order-successful hidden">
+        <img src="/imges/ordersuccess.png" alt="order-successful">
+        <h1>Order Successful!</h1>
+        <p>You have successful made order</p>
+       <a href="/html/order.html"><button class="vieworder"><h2>View Order</h2> </button></a> 
+    </div>
+</section>
+    </main>
+    <footer>
+        <div style="height: 77px;">
+
+        </div>
+        <div class="footerbar fixed-bottom">
+            <div class="box_icon_title_footer">
+                <a href="/html/home.html">
+                    <img src="/imges/home.png" alt="">
+                </a>
+                <p>Home</p>
+            </div>
+            <div class="box_icon_title_footer">
+                <a href="/html/cart.html"><img src="/imges/cart.png" alt=""></a>
+                <p>Cart</p>
+            </div>
+            <div class="box_icon_title_footer">
+                <a href="/html/order.html"><img src="/imges/shoppi.png" alt=""></a>
+                <p>Orders</p>
+            </div>
+            <div class="box_icon_title_footer">
+                <a href=""><img src="/imges/wallet.png" alt=""></a>
+                <p>Wallet</p>
+            </div>
+            <div class="box_icon_title_footer">
+                <a href=""><img src="/imges/profile.png" alt=""></a>
+                <p>Profile</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="/js/home.js"></script>
+</body>
+
+</html>

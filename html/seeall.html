@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Most Popular</title>
+    <link rel="shortcut icon" href="/imges/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <div class="productpageheader">
+            <div onclick="backtohome()" style="display:inline-block ;">
+
+                <img src="/imges/prev icon.png" alt="">
+            </div>
+            <h1>Most Popular</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="product_arm_button_container">
+                <button id="allbtn" onclick="setsome('mostpopular')" type="button"
+                    class="btn btn-dark product_arm_button ">All</button>
+                <button onclick="setsome('Nike')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Nike</button>
+                <button onclick="setsome('adidas')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Adidas</button>
+                <button onclick="setsome('puma')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Puma</button>
+                <button onclick="setsome('asics')" type="button" class="btn btn-outline-dark product_arm_button">
+                    Asics</button>
+                <button onclick="setsome('reebok')" type="button" class="btn btn-outline-dark product_arm_button">
+                    Reebok</button>
+                <button onclick="setsome('newbalance')" type="button" class="btn btn-outline-dark product_arm_button">
+                    New Ba..</button>
+                <button onclick="setsome('converse')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Converse</button>
+                <button onclick="setsome('irankafsh')" type="button"
+                    class="btn btn-outline-dark product_arm_button">Irankafsh</button>
+                <button onclick="setsome('kafshmeli')" type="button"
+                    class="btn btn-outline-dark product_arm_button">kafshmeli</button>
+            </div>
+        </section>
+        <section>
+
+
+            <div class="products">
+
+            </div>
+        </section>
+    </main>
+    <script src="/js/seeall.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

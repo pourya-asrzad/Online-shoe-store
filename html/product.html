@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/product.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>product</title>
+    <link rel="shortcut icon" href="/imges/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header onclick="whereback()" class="prevbtnpropage">
+        <img width="70" src="/imges/prev icon.png" alt="">
+    </header>
+    <main>
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide setback" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div id="cusu" class="carousel-item active" data-bs-interval="10000">
+                    <img src="" class="d-block w-50  imgpro shoeimg1" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div id="cusu" class="carousel-item" data-bs-interval="2000">
+                    <img src="" class="d-block w-50 imgpro shoeimg2" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div id="cusu" class="carousel-item">
+                    <img src="" class="d-block w-50  imgpro shoeimg3" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev opacity-0" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next opacity-0" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section>
+            <div>
+                <div class="name_icon_group">
+                    <h1 style="margin-top:1rem ;margin-left:20px;" class="shoename">Running Sportwear</h1>
+                    <img style="margin-right:35px ;" width="30" height="30" src="/imges/like.png" alt="">
+                </div>
+                <div class="aftet_title_flex">
+                    <div class="sold">
+                        <small>5.371 sold</small>
+                    </div>
+                    <div class="rewies">
+                        <img width="25" src="/imges/star.png" alt="star">
+                        4.3(5.389 rewiews)
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+        </section>
+        <section>
+            <div class="des_container">
+                <h3>Description</h3>
+                <p id="para" class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ipsum perspiciatis hic commodi sit
+                    tempora
+                    beatae dolor suscipit architecto, animi at adipisci temporibus, nemo dolorem optio aliquid voluptate
+                    eum
+                    tenetur.
+                </p>
+                <p class="vewmore" onclick="viemore()">view more..</p>
+            </div>
+
+            <div class="size_color">
+                <div class="size">
+                    <h3>Size</h3>
+                    <div class="sizes">
+                        <button onclick="choosesize(40)" type="button" class="btn btn-outline-dark" id="size-40">40</button>
+                        <button onclick="choosesize(41)" type="button" class="btn btn-dark" id="size-41">41</button>
+                        <button onclick="choosesize(42)" type="button" class="btn btn-outline-dark" id="size-42">42</button>
+
+                    </div>
+                </div>
+                <div class="color">
+                    <h3 style=" margin-left: 16px;">Color</h3>
+                    <div class="colors">
+                        <!-- <div class="pinkc "></div>
+                        <div class="yellowc"></div>
+                        <div class="bluec"></div>
+                        <div class="brownc"></div>
+                        <div class="kerem"></div> -->
+                    </div>
+                </div>
+
+            </div>
+            <img class="checkedicon  hidden" width="45" height="45" src="/imges/Untitled.png" alt="checked">
+        </section>
+        <section>
+            <div class="containerquan">
+                <h3 class="qutxt">Quantity</h3>
+                <div class="Quantity">
+                    <div><img onclick="price_reduction()" width="18" src="/imges/minez.png" alt=""></div>
+                    <div class="number_quantity">
+                        <h4 class="counternumber">1</h4>
+                    </div>
+                    <div><img onclick="price_increase()" height="25" src="/imges/plus.png" alt=""></div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="add-to-cart">
+                <div class="fix-addtocart">
+                    <div style="overflow: overlay;">
+                        <P>Total price</P>
+                        <div class="adddollar">
+                            <h2 id="ad_d" class="second-dollar hidden">$ </h2>
+                            <h2 class="shoeprice"></h2>
+                        </div>
+                    </div>
+                    <div class="buttoncomehere">
+
+                    </div>
+<!-- 
+<button id="addtocart"  onclick=" addtocart(useride);" class="btn btn-dark bg-black cartbtn"><img src="/imges/carticon.png" alt="">
+                        <h4> Add to
+                            Cart</h4>
+                    </button> -->
+                    <!-- <button id="addedtocart"    class="btn btn-dark bg-black cartbtn cartbtnadded">
+                        <h4 id="addtocarttxt"> Added to cart</h4>
+                    </button> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

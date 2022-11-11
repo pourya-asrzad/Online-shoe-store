@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imges/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/chooseshipping.css">
+    <title>Choose Shipping</title>
+</head>
+<body>
+    <header>
+        <div class="shipping-choose">
+            <a href="/html/checkout.html">
+                <img src="/imges/prev icon.png" alt="">
+            </a>
+            <h1>Choose Shipping </h1>
+        </div>
+    </header>
+    <main>
+
+        <div  class="shippig-mode">
+            <img id="shipimage1" width="70" src="/imges/chooseshipping/1.png" alt="">
+        <div>
+            <h2 class="mode1">Economy</h2>
+            <p class="shippingdescription1" >Estimated Arrival,Dec 20-23</p>
+        </div>
+        <div class="fixtomoney">
+            <h2 class="shippingprice1">$10</h2>
+            <input onclick="chooseshipping(1)"  type="radio" name="Shipping" id="homeradiou">
+        </div>
+    </div>
+    
+    <div  class="shippig-mode">
+        <img id="shipimage2" width="70" src="/imges/chooseshipping/2.png" alt="">
+        <div>
+            <h2 class="mode2">Regular</h2>
+            <p class="shippingdescription2" >Estimated Arrival,Dec 20-22</p>
+        </div>
+         <div class="fixtomoney">
+            <h2 class="shippingprice2">$15</h2>
+            <input onclick="chooseshipping(2)"  type="radio" name="Shipping" id="homeradiou">
+        </div>
+    </div>
+    
+    <div class="shippig-mode">
+        <img id="shipimage3" width="70" src="/imges/chooseshipping/3.png" alt="">
+        <div>
+            <h2 class="mode3">Cargo</h2>
+            <p class="shippingdescription3" >Estimated Arrival,Dec 19-20</p>
+        </div>
+        <div class="fixtomoney">
+            <h2 class="shippingprice3">$20</h2>
+            <input onclick="chooseshipping(3)"  type="radio" name="Shipping" id="homeradiou">
+        </div>
+    </div>
+    
+    <div class="shippig-mode">
+        <img id="shipimage4" width="70" src="/imges/chooseshipping/4.png" alt="">
+        <div>
+            <h2 class="mode4">Express</h2>
+            <p class="shippingdescription4" >Estimated Arrival,Dec 18-19</p>
+        </div>
+        <div class="fixtomoney">
+            <h2 class="shippingprice4">$30</h2>
+            <input onclick="chooseshipping(4)" type="radio" name="Shipping" id="homeradiou">
+        </div>
+    </div>
+    <button onclick="applyshipping()" class="applybtn">
+        <h3>Apply</h3>
+                </button>
+</main>
+<script src="/js/shipping.js"></script>
+</body>
+</html>

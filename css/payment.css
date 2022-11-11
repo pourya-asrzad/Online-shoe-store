@@ -1,0 +1,70 @@
+body {
+    background-color: #aeb2b51b !important;
+}
+
+@font-face {
+    font-family: "basefont";
+    src: url("/font-robot/Roboto-Bold.ttf");
+}
+*{
+font-family: basefont;
+}
+.payment-header{
+    display:flex ;
+      align-items: center;
+   }
+   .payment-header h1{
+   font-size: 28px;
+   margin-left: 38px;
+}
+  
+.payment-header img{
+    position: absolute;
+    top: 19px;
+    left: -15px;
+} 
+
+.choosepayment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 24rem;
+    height: 5rem;
+    border-radius: 17px;
+    margin-left: 12px;
+}
+.choosepayment div{
+    display: flex;
+    align-items: center;
+}
+.choosepayment input{
+    width: 1.5rem;
+    height: 1.2rem;
+    accent-color: black;
+    margin-right: 10px;
+
+}
+.choosepayment img{
+    margin-left: 13px;
+    margin-right: 10px;
+}
+.applybtn{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 90%;
+    height: 4rem;
+    align-items: center;
+    border-radius: 33px;
+    position: fixed;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+    margin-left: 19px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+.applybtn h3{
+    font-size: 21px;
+} 

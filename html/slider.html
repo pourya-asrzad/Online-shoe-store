@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoea slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/imges/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-bs-ride="false">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height:100vh;">
+                <img src="/imges/slide1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1>
+                        We provide high quality products just for you
+
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item" style="height:100vh;">
+                <img src="/imges/slide2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1>Your satisfaction is our number one periority </h1>
+                </div>
+            </div>
+            <div id="last_slide" class="carousel-item" style="height:100vh;">
+                <img src="/imges/slide3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block" style="bottom: 9.25rem;">
+                    <h1>
+                        Let’s fulfill your fashion
+                        needs with shoearight
+                        now!
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class=" carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <button id="nextbnt" class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <div class="carousel-control-next-icon" aria-hidden="true" onclick="count()">
+                <button id="startbtn" type="button" class="btn btn-dark next_button">Next</button>
+            </div>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+        let counter = 0
+        function count() {
+            counter++
+            if (counter == 2) {
+                document.getElementById("nextbnt").remove()
+                document.getElementById("startbtn").innerText = "Get Started";
+                document.getElementById("startbtn").onclick = () => {
+                    changeTologin()
+                }
+            }
+
+        }
+        function changeTologin() {
+            window.location.pathname = "/html/login.html";
+        }
+
+    </script>  
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-color: #aeb2b51b !important;
+}
+
+@font-face {
+    font-family: "basefont";
+    src: url("/font-robot/Roboto-Bold.ttf");
+}
+*{
+font-family: basefont;
+}
+ .shipping-header{
+  display:flex ;
+    align-items: center;
+ }
+ .shipping-header h1{
+ font-size: 28px;
+  }
+
+  .address-checkout {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 13px 0;
+    justify-content: space-around;
+    border-radius: 29px;
+    margin-top: 31px;
+    width: 24rem;
+    margin-left: 11px;
+    height: 5rem;
+}
+
+.address-checkout h2 {
+    margin: 2px;
+}
+input[type=radio]{
+    height: 2rem;
+    width: 1.5rem;
+    accent-color: black;
+}
+.defaulttofix{
+    display: flex;
+    align-items: center;
+}
+.default{
+    background-color: #aeb2b51b;
+    height: 24px;
+    width: 4rem;
+    text-align: center;
+    padding-top: 2px;
+    margin-left: 8px;
+    border-radius: 6px;
+}
+.applybtn{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 90%;
+    height: 4rem;
+    align-items: center;
+    border-radius: 33px;
+    position: fixed;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+    margin-left: 19px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+.applybtn h3{
+    font-size: 21px;
+}

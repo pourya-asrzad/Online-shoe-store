@@ -1,0 +1,239 @@
+.imgpro {
+    margin-top: 25%;
+    margin-left: 20%;
+}
+
+#cusu {
+    height: 35vh;
+}
+
+.setback {
+    background-color: rgba(150, 150, 146, 0.151);
+}
+
+.prevbtnpropage {
+    position: absolute;
+    z-index: 3;
+}
+
+@font-face {
+    font-family: "basefont";
+    src: url("/font-robot/Roboto-Bold.ttf");
+}
+
+h1,
+h3,
+h2 {
+    font-family: basefont;
+}
+
+.rewies {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.aftet_title_flex {
+    display: flex;
+}
+
+.name_icon_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.sold {
+    padding: 2px 7px;
+    border-radius: 7px;
+    background-color: rgba(182, 183, 185, 0.261);
+    margin-left: 20px;
+}
+
+.hr {
+    height: .5px;
+    width: 87%;
+    margin-top: 25px;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.326);
+}
+
+.description {
+    max-height: 45px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.des_container {
+    margin-left: 20px;
+    margin-top: 1.2rem;
+}
+
+.vewmore {
+    font-family: basefont;
+    background-color: white;
+    position: absolute;
+    right: 7px;
+    top: 32.5rem;
+}
+
+.size {
+    position: absolute;
+}
+
+.sizes {
+    display: flex;
+    font-family: basefont;
+    margin-left: 20px;
+
+}
+
+.size h3 {
+    margin-left: 20px;
+}
+
+.sizes button {
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.color {
+    margin-left: 13rem;
+}
+
+.colors div {
+    height: 45px;
+    min-width: 45px;
+    margin-right: 10px;
+    border-radius: 25px;
+    display: inline-block;
+
+}
+
+.colors {
+    display: flex;
+    column-gap: 10px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+
+
+
+.pinkc {
+    background-color: palevioletred;
+}
+
+.yellowc {
+    background-color: yellow;
+}
+
+.bluec {
+    background-color: aqua;
+}
+
+.brownc {
+    background-color: burlywood;
+}
+
+.kerem {
+    background-color: rgb(165, 81, 42);
+}
+
+.checked {
+    background-color: aliceblue;
+}
+
+.checkedicon {
+    border-radius: 28px;
+}
+
+.hidden {
+    display: none;
+}
+
+.qutxt {
+    margin-left: 20px;
+}
+
+.Quantity {
+    display: flex;
+    background-color: rgba(182, 183, 185, 0.261);
+    padding: 5px 10px;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-radius: 18px;
+    position: absolute;
+    left: 109px;
+    top: 44.2rem;
+}
+
+.containerquan {
+    display: flex;
+    margin-top: 30px;
+}
+
+.Quantity div {
+    margin-right: 10px
+}
+
+.fix-addtocart {
+    display: flex;
+    align-items: center;
+}
+
+.add-to-cart {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.cartbtn {
+    display: flex !important;
+    border-radius: 44px !important;
+    min-width: 16rem;
+    justify-content: center;
+    height: 4rem;
+    align-items: center;
+    margin-left: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cartbtn img {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.adddollar {
+    display: flex;
+}
+
+#ad_d {
+    margin-right: 7px;
+}
+
+.redc {
+    background-color: red;
+}
+
+.blackc {
+    background-color: black;
+}
+.cartbtnadded{
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+.hidden{
+    display: none !important;
+}

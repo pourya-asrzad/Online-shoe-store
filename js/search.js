@@ -57,15 +57,19 @@ async function gethistory() {
       `http://localhost:3000/userssearch?userid=${useride}`
     );
     const data = await res.json();
+    console.log(data.length);
+    if (data.length == 0) {
+      document.querySelector(".allrecent").classList.add("hidden");
+    }
     data.map((ele) => {
       const historyword = `<div  class="resin">
-   <span onclick=usehistory("${ele.historyword}") class="restext"> ${ele.historyword}</span>
+   <span onclick="usehistory('${ele.historyword}')" class="restext"> ${ele.historyword}</span>
    <img onclick="deleteonehistory(${ele.id})" src="/imges/deletebtn.png" alt="delete">
 </div>`;
       document.querySelector(".result").innerHTML += historyword;
     });
   } catch {
-    console.log("object");
+    window.location.href = "/html/error.html";
   }
 }
 gethistory();
@@ -92,7 +96,6 @@ function cleareallhistory() {
     .then((res) => res.json())
     .then((data) => {
       data.map((ele) => {
-        console.log();
         fetch(`http://localhost:3000/userssearch/${ele.id}`, {
           method: "DELETE",
         });

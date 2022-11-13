@@ -28,16 +28,13 @@ function get_order_data() {
         document.querySelector("body").style.cssText =
           " background-color:white !important;";
       }
-      console.log(dataorder);
+
       dataorder.map((element) => {
-        console.log(element);
         for (const iterator of element.cartarr) {
           fetch(`http://localhost:3000/products/${iterator.productid}`)
             .then((res) => res.json())
             .then((data) => {
-              console.log(iterator.color);
               const price = data.Price.split(" ");
-              console.log(data);
 
               const ordercard = `  <div class="card-order">
               <div class="img-container-order">

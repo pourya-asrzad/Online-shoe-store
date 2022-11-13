@@ -18,7 +18,7 @@ function get_card_data() {
       } else {
         document.querySelector(".checkout-cart").classList.remove("hidden");
       }
-      console.log(data.length);
+
       data.map((element) => {
         for (const iterator of element.cartarr) {
           fetch(`http://localhost:3000/products/${iterator.productid}`)

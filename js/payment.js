@@ -53,7 +53,7 @@ function checkinputgotohomepage(e) {
   } else {
     fix++;
   }
-  console.log(fix);
+
   /*4111111111111111 visa card*/
   if (fix == 4) {
     let arr = [];

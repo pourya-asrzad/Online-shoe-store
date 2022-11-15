@@ -10,11 +10,13 @@ const counternumber = document.querySelector(".counternumber");
 let cartarr = [{ productid: "n", color: "n", size: 41 }];
 let indexpricevar;
 function viemore() {
+  //view more abo
   document.getElementById("para").classList.remove("description");
   document.querySelector(".vewmore").remove();
   document.querySelector(".Quantity").style.top = "46.2rem";
 }
 document.querySelector(".colors").addEventListener("click", (event) => {
+  //checked the color
   const deletelastclass = event.target.className;
   document
     .querySelector(`.${deletelastclass.split(" ")[0]}`)
@@ -24,6 +26,7 @@ document.querySelector(".colors").addEventListener("click", (event) => {
   });
 });
 function showing_shoe_detail(id) {
+  //get product detail
   cartarr.map((e) => {
     e.productid = id;
   });
@@ -80,10 +83,12 @@ function showing_shoe_detail(id) {
 showing_shoe_detail(productchoosen_id);
 
 function whereback() {
+  //back to page where that came from
   window.location.href = localStorage.getItem("sendpage");
 }
 let tofix_increas = 0;
 function price_increase() {
+  //plus btn
   tofix_increas++;
   adddollar.classList.remove("hidden");
   if (tofix_increas == 1) {
@@ -101,6 +106,7 @@ function price_increase() {
 indexpricevar = +counternumber.textContent;
 
 function price_reduction() {
+  //oposite plus btn 😃
   if (counternumber.textContent !== "1") {
     counternumber.textContent--;
     let reduction = counternumber.textContent * localStorage.pruductprice;
@@ -111,6 +117,7 @@ function price_reduction() {
 }
 
 function choosesize(size) {
+  //if else in this function it just fix bootstrap btn
   if (size !== 41) {
     document.getElementById("size-41").classList.remove("btn-dark");
     document.getElementById("size-41").classList.add("btn-outline-dark");

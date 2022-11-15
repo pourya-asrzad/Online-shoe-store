@@ -4,8 +4,10 @@ const parseuserinfo = JSON.parse(localStorage.passemail);
 let useride;
 parseuserinfo.map((e) => {
   useride = e.id;
+  //find user id to use
 });
 function setprofiladnname() {
+  //set profile 🙂
   const userinfo = JSON.parse(localStorage.info);
   userinfo.map((data) => {
     profile.setAttribute("src", data.profile);
@@ -14,31 +16,9 @@ function setprofiladnname() {
 }
 setprofiladnname();
 const cardcontainer = document.querySelector(".products");
-function setsome1(product) {
-  fetch(`http://localhost:3000/${product}`)
-    .then((res) => res.json())
-    .then((data) => {
-      if (product !== "mostpopular") {
-        document.getElementById("allbtn").classList.add("btn-outline-dark");
-        document.getElementById("allbtn").classList.remove("btn-dark");
-      }
-      cardcontainer.textContent = " ";
-      data.map((element) => {
-        const card = document.createElement("div");
-        card.innerHTML = ` <div onclick="productinfo_shower(${element.id})" class="prodoct_image_shown">
-            <img width="150" class="productimg_popular1 productimg_popular" src="${element.image}" alt="K-Swiss ista ">
-        </div>
-        <h4 style="max-width: 12rem;
-        max-height: 1.5rem;
-        overflow: hidden;">${element.name}</h4>
-        <h5>${element.Price}</h5>`;
-
-        cardcontainer.appendChild(card);
-      });
-    });
-}
 
 async function setsome(pro) {
+  //this function called when we click on the most populars
   const res = await fetch(`http://localhost:3000/${pro}`);
   const data = await res.json();
   if (pro !== "mostpopular") {
@@ -74,6 +54,7 @@ function saygood() {
 }
 saygood();
 function showmore() {
+  //worked when click on more btn and shows two another company
   document.querySelector(".morebtn").remove();
   const anothercompny = `<div class="arm-box">
 <div class="arms" id="kafshmeli">
@@ -91,6 +72,7 @@ function showmore() {
 }
 
 document.querySelector(".categories").addEventListener("click", (event) => {
+  //go to products page and set company name in localsrtorage
   if (
     event.target.id == "Nike" ||
     event.target.id == "adidas" ||
@@ -102,12 +84,12 @@ document.querySelector(".categories").addEventListener("click", (event) => {
     event.target.id == "irankafsh" ||
     event.target.id == "kafshmeli"
   ) {
-    //sorry for this Ugly code first time I write a include but it doesn't work so I have little time and I can't so think on one thing and I should end this project then I think abou fix this
     localStorage.setItem("productchoose", event.target.id);
     window.location.pathname = "/html/Products.html";
   }
 });
 function productinfo_shower(id) {
+  //this onclick is on the every product and help us when we want came back
   localStorage.sendpage = "/html/home.html";
   localStorage.setItem("procuctidtoshow", id);
   window.location.pathname = "/html/product.html";
@@ -118,6 +100,7 @@ function change_page_tosearch() {
 }
 
 function showordersuccessful() {
+  //when the pay is successful this will show a toast
   if (localStorage.orderstatus) {
     const statusorder = JSON.parse(localStorage.orderstatus);
     statusorder.map((ele) => {
@@ -134,11 +117,14 @@ showordersuccessful();
 setsome("mostpopular");
 
 function hidesuccessful() {
+  // if we click around of successful toast the toast will gone by this function
   deletelastcart();
   document.querySelector(".succsessghost").classList.add("hidden");
   document.querySelector(".order-successful").classList.add("hidden");
 }
 function deletelastcart() {
+  //it will fix json-server bug that when more request we sand the json-server crash and I fix that by this function
+  //this functyion delete all in cart but when we are in the app not when we are in the payment
   if (localStorage.deletedataascart) {
     const deldata = JSON.parse(localStorage.deletedataascart);
     deldata.map((ele) => {
@@ -150,6 +136,7 @@ function deletelastcart() {
   }
 }
 function setsearchhistory() {
+  //Set the user's search history in this function when the user returns to the home page from the search page
   if (localStorage.searchhistory) {
     const searchdata = JSON.parse(localStorage.searchhistory);
     searchdata.map((element) => {

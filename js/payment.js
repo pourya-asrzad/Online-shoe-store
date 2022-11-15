@@ -61,25 +61,29 @@ function checkinputgotohomepage(e) {
     arr.push({ userid: useride, order: 1 });
     localStorage.orderstatus = JSON.stringify(arr);
     async function aysnclike() {
-      const res = await fetch(`http://localhost:3000/cart?userid=${useride}`);
-      const data = await res.json();
-      await data.map((ele) => {
-        dataid.push({ productids: ele.id });
-        fetch("http://localhost:3000/order", {
-          method: "POST",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify({
-            cartarr: ele.cartarr,
-            indexprice: ele.indexprice,
-            userid: ele.userid,
-          }),
+      try {
+        const res = await fetch(`http://localhost:3000/cart?userid=${useride}`);
+        const data = await res.json();
+        await data.map((ele) => {
+          dataid.push({ productids: ele.id });
+          fetch("http://localhost:3000/order", {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json",
+            },
+            body: JSON.stringify({
+              cartarr: ele.cartarr,
+              indexprice: ele.indexprice,
+              userid: ele.userid,
+            }),
+          });
         });
-      });
 
-      localStorage.deletedataascart = JSON.stringify(dataid);
-      localStorage.gohome = "true";
+        localStorage.deletedataascart = JSON.stringify(dataid);
+        localStorage.gohome = "true";
+      } catch {
+        window.location.pathname = "/html/error.html";
+      }
     }
     aysnclike();
   }

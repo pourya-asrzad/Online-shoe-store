@@ -1470,6 +1470,42 @@
       "indexprice": 1,
       "userid": 3,
       "id": 15
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 29,
+          "color": "redc",
+          "size": 42
+        }
+      ],
+      "indexprice": 3,
+      "userid": 3,
+      "id": 16
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 17,
+          "color": "blackc",
+          "size": 40
+        }
+      ],
+      "indexprice": 6,
+      "userid": 3,
+      "id": 17
+    },
+    {
+      "cartarr": [
+        {
+          "productid": 45,
+          "color": "kerem",
+          "size": 41
+        }
+      ],
+      "indexprice": 1,
+      "userid": 3,
+      "id": 18
     }
   ],
   "userssearch": [
@@ -1489,24 +1525,9 @@
       "id": 5
     },
     {
-      "historyword": "hi",
+      "historyword": "gh",
       "userid": 3,
-      "id": 7
-    },
-    {
-      "historyword": "air",
-      "userid": 3,
-      "id": 8
-    },
-    {
-      "historyword": "nike",
-      "userid": 3,
-      "id": 9
-    },
-    {
-      "historyword": "hi",
-      "userid": 3,
-      "id": 10
+      "id": 6
     }
   ]
 }

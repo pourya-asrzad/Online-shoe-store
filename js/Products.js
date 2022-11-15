@@ -5,6 +5,7 @@ const productchoosen = localStorage.getItem("productchoose");
 document.getElementById("prudname").innerText = productchoosen;
 const cardcontainer = document.querySelector(".products");
 function setsome(product) {
+  //the company name is come from localstorage and whe set that company product in the page by this function
   fetch(`http://localhost:3000/${product}`)
     .then((res) => res.json())
     .then((data) => {
@@ -24,6 +25,7 @@ function setsome(product) {
 setsome(productchoosen);
 
 function productinfo_shower(id) {
+  //read this function work in the home.js
   localStorage.setItem("procuctidtoshow", id);
   localStorage.sendpage = "/html/Products.html";
   window.location.pathname = "/html/product.html";

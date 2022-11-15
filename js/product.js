@@ -130,6 +130,9 @@ function choosesize(size) {
     document.getElementById("size-42").classList.add("btn-outline-dark");
     document.getElementById("size-40").classList.remove("btn-dark");
     document.getElementById("size-40").classList.add("btn-outline-dark");
+  } else if (size == 40) {
+    document.getElementById("size-42").classList.remove("btn-dark");
+    document.getElementById("size-42").classList.add("btn-outline-dark");
   }
   document.getElementById(`size-${size}`).classList.add("btn-dark");
   document.getElementById(`size-${size}`).classList.remove("btn-outline-dark");

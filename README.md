@@ -2,6 +2,8 @@
 
 It is a project with JavaScript, HTML, CSS, and a little bit of Bootstrap.
 
+<h3> (It's only for mobile yet!)</h3>
+
 how can you run this? if you know json server go in terminal of backend folder and
 write <code>npm run start </code>
 
